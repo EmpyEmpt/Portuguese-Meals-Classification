@@ -16,7 +16,7 @@ A classificator for ['Portuguese Meals Dataset'](https://www.kaggle.com/datasets
 
 `96.43%` accuracy on val split (10% of dataset) and a `95.78%` on a whole dataset.  
 Baseline model has a size of `129mb`, TFlite converted model has a size of `42mb` and it's possible to bring the size down to aroun `12mb` with `pruning` and by using other `quantization` settings, confusion matrix for that run:  
-![confusion matrix](images\cofusion_matrix.jpg)
+![confusion matrix](images/cofusion_matrix.jpg)
 
 ## Usage
 
@@ -28,7 +28,7 @@ Baseline model has a size of `129mb`, TFlite converted model has a size of `42mb
   
 `Gradio` will start a server which you can use for inference, usually it starts at `http://127.0.0.1:7861/`. It also starts a publicly availible server at `*.gradio.app`. Actual addresses will be shown in the console.  
 
-![Inference preview](images\inferece.jpg)
+![Inference preview](images/inferece.jpg)
 
 ### Docker
 
