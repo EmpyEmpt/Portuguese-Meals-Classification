@@ -1,0 +1,16 @@
+/.dvc
+/data
+!/data/csv/full.csv
+/notebooks
+/secrets
+/wandb
+
+/model
+!/model/EfficientNetB3_quantized.tflite
+.dockerignore
+.gitignore
+.dvcignore
+
+data.dvc
+Dockerfile
+README.md
