@@ -11,6 +11,7 @@ baseline_path: ./model/EfficientNetB3_baseline.h5
 saved_model_baseline_path: ./model/SMbaseline/
 pruned_path: ./model/EfficientNetB3_pruned.h5
 tflite_path: ./model/EfficientNetB3_quantized.tflite
+tensorrt_path: ./model/tensorrt/
 
 # dataset
 dataset:
