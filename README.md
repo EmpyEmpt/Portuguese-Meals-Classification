@@ -14,7 +14,7 @@ A classificator for ['Portuguese Meals Dataset'](https://www.kaggle.com/datasets
 
 ## Sneak peek at results
 
-`96.43%` accuracy on val split (10% of dataset) and a `95.78%` on a whole dataset.  
+F1 score of `96.43%` on val split (10% of dataset) and a `95.78%` on a whole dataset.  
 Baseline model has a size of `129mb`, TFlite converted model has a size of `42mb` and it's possible to bring the size down to aroun `12mb` with `pruning` and by using other `quantization` settings, confusion matrix for that run:  
 ![confusion matrix](images/cofusion_matrix.jpg)
 
