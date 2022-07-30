@@ -7,9 +7,9 @@ img_shape: [128, 128, 3]
 class_count: 23
 model_name: EfficientNetV2M
 
-baseline_path: ./model/EfficientNetV2M_baseline.h5
+baseline_path: ./model/EfficientNetV2B3_baseline.h5
 saved_model_baseline_path: ./model/SMbaseline/
-tflite_path: ./model/EfficientNetV2M_quantized.tflite
+tflite_path: ./model/EfficientNetV2B3_quantized.tflite
 tensorrt_path: ./model/tensorrt/
 
 # dataset
