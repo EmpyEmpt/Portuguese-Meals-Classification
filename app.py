@@ -77,6 +77,6 @@ def inference(image):
 
 interface = gr.Interface(fn=inference, inputs='image',
                          outputs='text', title='Portugese Meals Classification')
-interface.launch(share=True, inbrowser=True)
+interface.launch(share=True, inbrowser=True, server_port=5000)
 interface.block_thread()
 interface.close()
