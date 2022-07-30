@@ -1,16 +1,15 @@
 wandb:
-  name: "EfficientNetB3"
+  name: "EfficientNetV2B3"
   project: "Portugese Meals Classification"
 
 random_seed: 0
 img_shape: [128, 128, 3]
 class_count: 23
-model_name: EfficientNetB3
+model_name: EfficientNetV2M
 
-baseline_path: ./model/EfficientNetB3_baseline.h5
+baseline_path: ./model/EfficientNetV2M_baseline.h5
 saved_model_baseline_path: ./model/SMbaseline/
-pruned_path: ./model/EfficientNetB3_pruned.h5
-tflite_path: ./model/EfficientNetB3_quantized.tflite
+tflite_path: ./model/EfficientNetV2M_quantized.tflite
 tensorrt_path: ./model/tensorrt/
 
 # dataset
@@ -19,14 +18,16 @@ dataset:
   data_dir: ./data/raw/
   augmented_dir: ./data/augmented_compressed/
   csv_dir: ./data/csv/
-  validation_ratio: 0.10
-  test_ratio: 0.20
+  train_ratio: 0.70
+  # 50% of leftover 30%, so validation a test parts are both 15% of original amount
+  validation_ratio: 0.50
 
 # train
 train:
-  epochs: 60
+  epochs: 20
   batch_size: 50
-  lr: 0.005
+  lr: 0.001
+  base_trainable: True
   label_smoothing: 0.1
   metrics: [accuracy]
 
