@@ -1,12 +1,12 @@
 /.dvc
 /data
-!/data/csv/full.csv
+/model
 /notebooks
 /secrets
 /wandb
 
-/model
-!/model/EfficientNetB3_quantized.tflite
+
+!/model/EfficientNetV2B3_quantized.tflite
 .dockerignore
 .gitignore
 .dvcignore

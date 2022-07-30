@@ -12,4 +12,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 # I ignore lots of unnecessary things in .dockerignore
 COPY . .
 
-CMD [ "python", "./inference.py" ]
+CMD [ "python", "./app.py" ]
